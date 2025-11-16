@@ -47,6 +47,15 @@ export const MCP_SERVERS_BY_PROVIDER: Record<ProviderType, Record<string, McpSer
       type: 'http',
       url: 'https://mcp.grep.app',
     },
+    'serena': {
+      type: 'stdio',
+      command: 'uvx',
+      args: [
+        '--from',
+        'git+https://github.com/oraios/serena',
+        'serena-mcp-server',
+      ],
+    },
   },
   'z-ai': {
     // Grep.app MCP - code search across public GitHub repositories
