@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 3001
 
-CMD ["bun", "run", "server/server.ts"]
+CMD ["bun", "run", "start"]
